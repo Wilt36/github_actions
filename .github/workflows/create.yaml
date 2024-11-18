@@ -1,4 +1,4 @@
-name: Create log_pytest?txt
+name: Create log_pytest.txt
 
 on: workflow_dispatch
 
@@ -22,7 +22,7 @@ jobs:
           git checkout main
           git branch --set-upstream-to=origin/main
           git pull
-          pytest >> log_pytest.txt
+          python -m pytest >> log_pytest.txt
           ls -a
           git add .
           git commit -m "random file from action"
