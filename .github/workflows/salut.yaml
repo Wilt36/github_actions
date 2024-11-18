@@ -1,0 +1,19 @@
+name: salutation sur un jour quelconque
+
+on: workflow_dispatch
+
+env:
+  Var_Quand: Lundi ## Var pour le workflow
+
+jobs:
+  Salut_Job:
+    runs-on: ubuntu-latest
+    env:
+      Var_Quoi: Salut ## Variable pour le Job
+    steps:
+      - name: Salut_Step
+        run: echo "$Var_Quoi $Var_Qui. Nous sommes $Var_Quand"
+        env:
+          Var_Qui : Pat ## Var pour le Step
+      - name: Salut_Step
+        run: echo "$Var_Quoi $Var_Qui. Nous sommes $Var_Quand"
