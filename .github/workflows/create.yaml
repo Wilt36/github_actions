@@ -1,9 +1,14 @@
-create_commit:
-  runs-on: ubuntu-latest
-  permissions:
-    contents: write
-  steps:
-    - name: Push a file to our repository
+name: Create log_pytest?txt
+
+on: workflow_dispatch
+
+jobs:
+  Job_pytest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+     - name: Push a file to our repository
       run: |
         pwd
         ls -a 
