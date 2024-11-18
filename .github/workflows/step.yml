@@ -1,0 +1,12 @@
+name: Shell commands
+on: [push]
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 
+        run: echo "Hello world"
+      - name: Step 2
+        run: python3 -V
+      - name: Step 3
+        run : uname -a
