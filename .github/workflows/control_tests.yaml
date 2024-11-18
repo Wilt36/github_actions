@@ -20,7 +20,7 @@ jobs:
 
       - name: Step4 Run tests
         run: |
-          pytest
+          python -m pytest
 
       - name: Step5 Run flake8
         uses: py-actions/flake8@v2
