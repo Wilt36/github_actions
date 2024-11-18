@@ -1,7 +1,7 @@
 name: Shell commands
 on: [push]
 jobs:
-  run-shell-command:
+  Job1 :
     runs-on: ubuntu-latest
     steps:
       - name: Step 1 
